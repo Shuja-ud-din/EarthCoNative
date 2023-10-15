@@ -31,7 +31,7 @@ const LoginScreen = ({ navigation }) => {
                             <Text style={{ color: '#7c9c3d' }}>Forgot Password?</Text>
                         </TouchableOpacity>
                     </View>
-                    <TouchableOpacity style={styles.primaryBtn}>
+                    <TouchableOpacity style={styles.primaryBtn} onPress={() => navigation.navigate('Dashboard')}>
                         <Text style={{ color: 'white' }}>Sign Me in</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btnText} onPress={() => navigation.navigate('Sign Up')}>
